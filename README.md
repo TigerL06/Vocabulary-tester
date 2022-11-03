@@ -1,7 +1,7 @@
 # Vocabulary-tester
 
 **Code**
- 
+ ```c#
  Console.WriteLine();
             int index=0;
             string[] Antwort = new string[19];
@@ -28,7 +28,7 @@
 
                 }
 
-**code**
+**Aktueller Code**
 
 ```c#
 namespace Vocabulary_tester
