@@ -29,6 +29,8 @@
                 }
 
 **code**
+
+```c#
 namespace Vocabulary_tester
 {
     internal class Program
