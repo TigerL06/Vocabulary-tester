@@ -110,6 +110,7 @@ namespace Vocabulary_tester
 
 
             Console.WriteLine("Welcome to the English Voci quiz.");
+
             for (int Zahl = 0; Zahl < 20; Zahl++)
             {
                 var rnd = new Random();
@@ -127,6 +128,11 @@ namespace Vocabulary_tester
                     if (Antwort[Zahl] == EnglischWoerter[index][j])
                     {
                         richtig = true;
+                    }
+
+                    if (Antwort[Zahl] != EnglischWoerter[index][j])
+                    {
+                        Console.WriteLine("wrong");
                     }
 
                     if (richtig == false)
