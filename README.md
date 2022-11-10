@@ -149,7 +149,7 @@ namespace Vocabulary_tester
 
             for (int x = 0; x < Falsch; x++)
             {
-
+                Console.WriteLine();
                 Console.Write($"This is your answer:{Antwort[x]}");
                 
 
@@ -161,8 +161,9 @@ namespace Vocabulary_tester
                 }
             }
 
+            Console.Read();
         }
-
+         
         
         static List<List<string>> ReadFromFile(string filename)
         {
