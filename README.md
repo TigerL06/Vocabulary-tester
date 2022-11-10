@@ -109,12 +109,12 @@ namespace Vocabulary_tester
 
 
 
-            Console.WriteLine("Herzlich willkommen zum englisch Voci abfrage.");
+            Console.WriteLine("Welcome to the English Voci quiz.");
             for (int Zahl = 0; Zahl < 20; Zahl++)
             {
                 var rnd = new Random();
                 index = rnd.Next(0, EnglischWoerter.Length);
-                Console.Write($"Geben sie das englische Wort von dem deutschen Wort {DeutscheWörter[index]} ein.");
+                Console.Write($"Enter the English word from the German word {DeutscheWörter[index]}.");
                 Antwort[Zahl] = Console.ReadLine();
 
                 bool richtig = false;
@@ -144,22 +144,20 @@ namespace Vocabulary_tester
             ri = 20 - Falsch;
             Resultat = (Falsch / 20) * 100;
             Resultat = Resultat - 100;
-            Console.WriteLine($"Sie hatten {ri} von 20 ");
-            Console.WriteLine($"Sie haten {Resultat} Prozent richtig");
+            Console.WriteLine($"You had {ri} out of 20 correct");
+            Console.WriteLine($"You got {Resultat}% right .");
 
             for (int x = 0; x < Falsch; x++)
             {
 
-                Console.Write("Das hier ist ihre Antwort:");
-                Console.Write(Antwort[x]);
+                Console.Write($"This is your answer:{Antwort[x]}");
+                
 
                 Console.WriteLine();
 
-                Console.Write("Das hier wäre die richtige Antwort:");
-                
                 for (int y = 0; y < EnglischWoerter[Antwort2[x]].Length; y++)
                 {
-                    Console.Write(EnglischWoerter[Antwort2[x]][y]);
+                     Console.Write($"This would be the right answer:{EnglischWoerter[Antwort2[x]][y]}");
                 }
             }
 
@@ -186,4 +184,5 @@ namespace Vocabulary_tester
         }
     }
 }
+
 ```
