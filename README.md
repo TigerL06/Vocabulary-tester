@@ -269,20 +269,21 @@ namespace Vocabulary_tester
                 {
                     Console.WriteLine();
                     Console.Write($"This is your answer:{Antwort[x]}");
-
+                    Thread.Sleep(500);
 
                     Console.WriteLine();
 
                     for (int y = 0; y < EnglischWoerter[Antwort2[x]].Length; y++)
                     {
                         Console.Write($"This would be the right answer:{EnglischWoerter[Antwort2[x]][y]}");
+                        Thread.Sleep(500);
                     }
                 }
-                Console.Read();
+                
 
                 Console.WriteLine("Do you want another round? yes/no");
                 Wiederholung=Convert.ToString(Console.ReadLine());//Hat irgendwie nicht mit bool geklappt, warum?
-                Console.Read();
+                Thread.Sleep(10);
                 
 
 
